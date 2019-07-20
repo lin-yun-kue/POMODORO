@@ -1,11 +1,11 @@
 .container {
-    width: 1280px;
+    width: 100%;
     display: flex;
     height: 100%;
 }
 
 .clock_area {
-    flex: 1 1 560px;
+    flex: 0 0 560px;
     background-color: black;
 }
 
@@ -74,4 +74,124 @@
 
 .item_area {
     flex: 1 1 720px;
+}
+
+.item_container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.slide_bar {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.slide_item {
+    flex: 0 0 180px;
+}
+.slide_item span {
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: super;
+}
+.slide_item i {
+    font-size: 30px;
+}
+.slide_item .active {
+    color: orange;
+    border-bottom: 5px solid orange;
+    text-shadow: 2px 2px 4px #cabfbf;
+}
+
+.additem_section {
+    margin-top: 60px;
+    position: relative;
+    height: 50px;
+    color: orange;
+}
+.additem_section input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-left: 20px;
+}
+.additem_section input::placeholder {
+    color: orange;
+}
+.additem_section i {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+
+.item_section {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.item_head {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+
+.up {
+    float: right;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.item_body {
+    margin-top: 10px;
+    padding: 15px 20px;
+    border-bottom: 2px solid black;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 2px;
+    margin-right: 10px
+}
+
+.play_icon {
+    float: right;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.play_icon .triangle {
+    margin: 3px 0 0 4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #000000;
+}
+
+.item_bottom {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+.down {
+    float: right;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 10px 0 10px;
+    border-color: #ffffff transparent transparent transparent;
 }
